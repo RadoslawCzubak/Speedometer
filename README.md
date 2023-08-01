@@ -15,7 +15,7 @@ The Speedometer App is a mobile application for iOS devices written in Swift. Th
 
 ## Screenshots
 
-<img src="art/main_screen31072023.png" height="400px"/>
+<img src="art/main_screen31072023.png" height="450px"/>
 
 ## Requirements
 
@@ -32,7 +32,7 @@ Follow these instructions to get a copy of the project and run the app on your i
 git clone git@github.com:RadoslawCzubak/Speedometer.git
 ```
 
-2. Open the project in Xcode by double-clicking on the `SpeedometerApp.xcodeproj` file.
+2. Open the project in Xcode by double-clicking on the `Speedometer.xcodeproj` file.
 
 3. Build and run the app on your connected iOS device or simulator.
 
