@@ -55,7 +55,7 @@ struct LocationInfoStack: View{
             Spacer()
             LocationInfoItem(value: longitude, image: "longitude")
             Spacer()
-            LocationInfoItem(value: altitude, image: "altitude")
+            LocationInfoItem(value: altitude, image: "altitude", format: "%.3f")
         }
     }
 }
@@ -63,6 +63,7 @@ struct LocationInfoStack: View{
 struct LocationInfoItem: View {
     let value: Double
     let image: String
+    var format: String = "%.5f"
     
     var body: some View {
         HStack{
@@ -70,7 +71,10 @@ struct LocationInfoItem: View {
                 .renderingMode(.template)
                 .foregroundColor(Colors.textColor)
             Spacer()
-            Text(String(format: "%.6f", value))
+            
+
+            Text(String(format: format, value))
+                .font(.system(.body, design: .monospaced))
                 .foregroundColor(Colors.textColor)
             Spacer()
         }

@@ -11,19 +11,13 @@ struct CircularGaugeStyle: GaugeStyle {
     
     func makeBody(configuration: Configuration) -> some View {
         ZStack {
- 
-            
+
             Circle()
                 .foregroundColor(Color(.systemGray6))
  
             Circle()
                 .trim(from: 0, to: 0.75 * configuration.value)
                 .stroke(.blue, style: StrokeStyle(lineWidth: 20, lineCap: .round))
-                .rotationEffect(.degrees(135))
- 
-            Circle()
-                .trim(from: 0, to: 0.75)
-                .stroke(Colors.textColor, style: StrokeStyle(lineWidth: 10, lineCap: .butt, lineJoin: .round, dash: [1, 20], dashPhase: 0.0))
                 .rotationEffect(.degrees(135))
  
             VStack {

@@ -27,6 +27,11 @@ struct SpeedometerView: View {
         )
         .padding()
         .background(Colors.background)
+        .onAppear { UIApplication.shared.isIdleTimerDisabled = true }
+        .onDisappear { UIApplication.shared.isIdleTimerDisabled = false }
+        .navigationBarTitle("")
+                .navigationBarBackButtonHidden(true)
+                .navigationBarHidden(true)
     }
 }
 

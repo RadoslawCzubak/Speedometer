@@ -12,7 +12,9 @@ struct SpeedometerApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            SpeedometerView()
+            NavigationStack{
+                SplashView()
+            }
         }
     }
 }

@@ -24,6 +24,7 @@
 		85E759892A75759900FAFAC8 /* CircularGaugeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E759882A75759900FAFAC8 /* CircularGaugeStyle.swift */; };
 		85E7598B2A75770100FAFAC8 /* CircularGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E7598A2A75770100FAFAC8 /* CircularGaugeView.swift */; };
 		85E759902A765D1300FAFAC8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 85E7598F2A765D1300FAFAC8 /* .gitignore */; };
+		85E759942A766F2100FAFAC8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E759932A766F2100FAFAC8 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,11 +60,13 @@
 		8597775E2A6D695B005F9F68 /* SpeedometerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8597776C2A6D6C70005F9F68 /* SpeedometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerViewModel.swift; sourceTree = "<group>"; };
 		8597776E2A6D6CFB005F9F68 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		85C165F82A786872001F646A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		85D9E18E2A71CB640012FBB4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		85D9E1902A72B4570012FBB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85E759882A75759900FAFAC8 /* CircularGaugeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularGaugeStyle.swift; sourceTree = "<group>"; };
 		85E7598A2A75770100FAFAC8 /* CircularGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularGaugeView.swift; sourceTree = "<group>"; };
 		85E7598F2A765D1300FAFAC8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		85E759932A766F2100FAFAC8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +105,9 @@
 		85888BE32A73FEBA00E92020 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				85E759912A766C7E00FAFAC8 /* CircularGaugeView */,
 				85888BE42A73FEDD00E92020 /* HorizontalGaugeView.swift */,
 				85888BE62A73FFD900E92020 /* LocationInfoView.swift */,
-				85E759882A75759900FAFAC8 /* CircularGaugeStyle.swift */,
-				85E7598A2A75770100FAFAC8 /* CircularGaugeView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -113,6 +115,7 @@
 		859777352A6D695A005F9F68 = {
 			isa = PBXGroup;
 			children = (
+				85C165F82A786872001F646A /* README.md */,
 				85E7598F2A765D1300FAFAC8 /* .gitignore */,
 				8526BE882A75642E00BF38B8 /* Assets.xcassets */,
 				859777402A6D695A005F9F68 /* Speedometer */,
@@ -135,6 +138,7 @@
 		859777402A6D695A005F9F68 /* Speedometer */ = {
 			isa = PBXGroup;
 			children = (
+				85E759922A766E6B00FAFAC8 /* Splash */,
 				85E7598E2A765C5700FAFAC8 /* Menu */,
 				85D9E18A2A71CA690012FBB4 /* Core */,
 				8597776B2A6D6BF8005F9F68 /* Speedometer */,
@@ -219,6 +223,23 @@
 			children = (
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		85E759912A766C7E00FAFAC8 /* CircularGaugeView */ = {
+			isa = PBXGroup;
+			children = (
+				85E759882A75759900FAFAC8 /* CircularGaugeStyle.swift */,
+				85E7598A2A75770100FAFAC8 /* CircularGaugeView.swift */,
+			);
+			path = CircularGaugeView;
+			sourceTree = "<group>";
+		};
+		85E759922A766E6B00FAFAC8 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				85E759932A766F2100FAFAC8 /* SplashView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +378,7 @@
 				85E7598B2A75770100FAFAC8 /* CircularGaugeView.swift in Sources */,
 				85888BE72A73FFD900E92020 /* LocationInfoView.swift in Sources */,
 				8597776F2A6D6CFB005F9F68 /* LocationManager.swift in Sources */,
+				85E759942A766F2100FAFAC8 /* SplashView.swift in Sources */,
 				85E759892A75759900FAFAC8 /* CircularGaugeStyle.swift in Sources */,
 				859777442A6D695A005F9F68 /* SpeedometerView.swift in Sources */,
 				85D9E18F2A71CB640012FBB4 /* Location.swift in Sources */,
@@ -528,8 +550,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,8 +582,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

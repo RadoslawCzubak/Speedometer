@@ -11,4 +11,5 @@ import SwiftUI
 struct Colors {
     static let textColor = Color("TextPrimary")
     static let background = Color("Background")
+    static let gold = Color("Gold")
 }
