@@ -158,7 +158,7 @@ struct SpeedometerLargeMapView: View {
                 }
                 .padding(16)
                 .frame(maxWidth: .infinity)
-                .background(.thinMaterial)
+                .background(.ultraThinMaterial)
                 .cornerRadius(16)
                 .padding(16)
             })
