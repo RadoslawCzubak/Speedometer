@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85047DA82A7BED89002C7CE2 /* RouteImporterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85047DA72A7BED89002C7CE2 /* RouteImporterView.swift */; };
+		85047DAA2A7BED9B002C7CE2 /* RouteImporterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85047DA92A7BED9B002C7CE2 /* RouteImporterViewModel.swift */; };
+		85047DAD2A7C2F6F002C7CE2 /* MarqueeText in Frameworks */ = {isa = PBXBuildFile; productRef = 85047DAC2A7C2F6F002C7CE2 /* MarqueeText */; };
+		85047DAF2A7C2FA6002C7CE2 /* LocationAccuracyBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85047DAE2A7C2FA6002C7CE2 /* LocationAccuracyBar.swift */; };
+		85047DB22A7C53E3002C7CE2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85047DB12A7C53E3002C7CE2 /* MapView.swift */; };
+		85047DB52A7C5D2D002C7CE2 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 85047DB42A7C5D2D002C7CE2 /* CoreGPX */; };
 		8526BE872A755A1C00BF38B8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526BE862A755A1C00BF38B8 /* Colors.swift */; };
 		8526BE892A75642E00BF38B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8526BE882A75642E00BF38B8 /* Assets.xcassets */; };
 		85888BE52A73FEDD00E92020 /* HorizontalGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85888BE42A73FEDD00E92020 /* HorizontalGaugeView.swift */; };
@@ -45,8 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85047DA72A7BED89002C7CE2 /* RouteImporterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteImporterView.swift; sourceTree = "<group>"; };
+		85047DA92A7BED9B002C7CE2 /* RouteImporterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteImporterViewModel.swift; sourceTree = "<group>"; };
+		85047DAE2A7C2FA6002C7CE2 /* LocationAccuracyBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccuracyBar.swift; sourceTree = "<group>"; };
+		85047DB12A7C53E3002C7CE2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8526BE862A755A1C00BF38B8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8526BE882A75642E00BF38B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		854119902AB1CA7F00EA7B94 /* trasa130923.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = trasa130923.gpx; sourceTree = "<group>"; };
 		85888BE42A73FEDD00E92020 /* HorizontalGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalGaugeView.swift; sourceTree = "<group>"; };
 		85888BE62A73FFD900E92020 /* LocationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoView.swift; sourceTree = "<group>"; };
 		8597773E2A6D695A005F9F68 /* Speedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speedometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85047DAD2A7C2F6F002C7CE2 /* MarqueeText in Frameworks */,
+				85047DB52A7C5D2D002C7CE2 /* CoreGPX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85047DA62A7BED51002C7CE2 /* RouteImporter */ = {
+			isa = PBXGroup;
+			children = (
+				85047DA72A7BED89002C7CE2 /* RouteImporterView.swift */,
+				85047DA92A7BED9B002C7CE2 /* RouteImporterViewModel.swift */,
+			);
+			path = RouteImporter;
+			sourceTree = "<group>";
+		};
+		85047DB02A7C53D4002C7CE2 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				85047DB12A7C53E3002C7CE2 /* MapView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 		8526BE852A755A0B00BF38B8 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +138,7 @@
 				85E759912A766C7E00FAFAC8 /* CircularGaugeView */,
 				85888BE42A73FEDD00E92020 /* HorizontalGaugeView.swift */,
 				85888BE62A73FFD900E92020 /* LocationInfoView.swift */,
+				85047DAE2A7C2FA6002C7CE2 /* LocationAccuracyBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -115,6 +146,7 @@
 		859777352A6D695A005F9F68 = {
 			isa = PBXGroup;
 			children = (
+				854119902AB1CA7F00EA7B94 /* trasa130923.gpx */,
 				85C165F82A786872001F646A /* README.md */,
 				85E7598F2A765D1300FAFAC8 /* .gitignore */,
 				8526BE882A75642E00BF38B8 /* Assets.xcassets */,
@@ -138,6 +170,7 @@
 		859777402A6D695A005F9F68 /* Speedometer */ = {
 			isa = PBXGroup;
 			children = (
+				85047DA62A7BED51002C7CE2 /* RouteImporter */,
 				85E759922A766E6B00FAFAC8 /* Splash */,
 				85E7598E2A765C5700FAFAC8 /* Menu */,
 				85D9E18A2A71CA690012FBB4 /* Core */,
@@ -203,6 +236,7 @@
 		85D9E18C2A71CA990012FBB4 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				85047DB02A7C53D4002C7CE2 /* MapView */,
 				85888BE32A73FEBA00E92020 /* Components */,
 				859777432A6D695A005F9F68 /* SpeedometerView.swift */,
 				8597776C2A6D6C70005F9F68 /* SpeedometerViewModel.swift */,
@@ -258,6 +292,10 @@
 			dependencies = (
 			);
 			name = Speedometer;
+			packageProductDependencies = (
+				85047DAC2A7C2F6F002C7CE2 /* MarqueeText */,
+				85047DB42A7C5D2D002C7CE2 /* CoreGPX */,
+			);
 			productName = Speedometer;
 			productReference = 8597773E2A6D695A005F9F68 /* Speedometer.app */;
 			productType = "com.apple.product-type.application";
@@ -330,6 +368,10 @@
 				Base,
 			);
 			mainGroup = 859777352A6D695A005F9F68;
+			packageReferences = (
+				85047DAB2A7C2F6E002C7CE2 /* XCRemoteSwiftPackageReference "MarqueeText" */,
+				85047DB32A7C5D2D002C7CE2 /* XCRemoteSwiftPackageReference "CoreGPX" */,
+			);
 			productRefGroup = 8597773F2A6D695A005F9F68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -374,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85D9E1912A72B4570012FBB4 /* AppDelegate.swift in Sources */,
+				85047DB22A7C53E3002C7CE2 /* MapView.swift in Sources */,
 				8526BE872A755A1C00BF38B8 /* Colors.swift in Sources */,
 				85E7598B2A75770100FAFAC8 /* CircularGaugeView.swift in Sources */,
 				85888BE72A73FFD900E92020 /* LocationInfoView.swift in Sources */,
@@ -381,10 +424,13 @@
 				85E759942A766F2100FAFAC8 /* SplashView.swift in Sources */,
 				85E759892A75759900FAFAC8 /* CircularGaugeStyle.swift in Sources */,
 				859777442A6D695A005F9F68 /* SpeedometerView.swift in Sources */,
+				85047DA82A7BED89002C7CE2 /* RouteImporterView.swift in Sources */,
 				85D9E18F2A71CB640012FBB4 /* Location.swift in Sources */,
+				85047DAA2A7BED9B002C7CE2 /* RouteImporterViewModel.swift in Sources */,
 				85888BE52A73FEDD00E92020 /* HorizontalGaugeView.swift in Sources */,
 				859777422A6D695A005F9F68 /* SpeedometerApp.swift in Sources */,
 				8597776D2A6D6C70005F9F68 /* SpeedometerViewModel.swift in Sources */,
+				85047DAF2A7C2FA6002C7CE2 /* LocationAccuracyBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,6 +761,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85047DAB2A7C2F6E002C7CE2 /* XCRemoteSwiftPackageReference "MarqueeText" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joekndy/MarqueeText";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		85047DB32A7C5D2D002C7CE2 /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vincentneo/CoreGPX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85047DAC2A7C2F6F002C7CE2 /* MarqueeText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85047DAB2A7C2F6E002C7CE2 /* XCRemoteSwiftPackageReference "MarqueeText" */;
+			productName = MarqueeText;
+		};
+		85047DB42A7C5D2D002C7CE2 /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85047DB32A7C5D2D002C7CE2 /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 859777362A6D695A005F9F68 /* Project object */;
 }

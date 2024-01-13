@@ -51,11 +51,18 @@ struct LocationInfoStack: View{
     
     var body: some View {
         VStack{
-            LocationInfoItem(value: latitude, image: "latitude")
+            LocationInfoItem(
+                value: latitude,
+                image: "latitude")
             Spacer()
-            LocationInfoItem(value: longitude, image: "longitude")
+            LocationInfoItem(
+                value: longitude,
+                image: "longitude")
             Spacer()
-            LocationInfoItem(value: altitude, image: "altitude", format: "%.3f")
+            LocationInfoItem(
+                value: altitude,
+                image: "altitude",
+                format: "%.3f")
         }
     }
 }

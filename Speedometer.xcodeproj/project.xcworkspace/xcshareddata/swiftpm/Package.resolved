@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "coregpx",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vincentneo/CoreGPX",
+      "state" : {
+        "revision" : "90dea5dea799e2b3684f5c72f07141d8516ce80b",
+        "version" : "0.9.2"
+      }
+    },
+    {
+      "identity" : "marqueetext",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/joekndy/MarqueeText",
+      "state" : {
+        "branch" : "master",
+        "revision" : "e18d514455563ad00581e0d825146c6f15b1c6c4"
+      }
+    }
+  ],
+  "version" : 2
+}

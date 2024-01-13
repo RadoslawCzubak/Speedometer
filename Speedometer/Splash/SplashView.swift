@@ -10,7 +10,7 @@ import SwiftUI
 struct SplashView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var isShowingSpeedo = false
-    @State private var timeRemaining = 3
+    @State private var timeRemaining = 0
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var body: some View {
         ZStack{
